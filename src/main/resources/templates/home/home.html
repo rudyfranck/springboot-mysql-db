@@ -7,11 +7,30 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+ <link href="static/css/bootstrap.min.css" rel="stylesheet">
+ <link href="static/css/style.css" rel="stylesheet" >
+ 
 </head>
 <body>
+<div role="navigation">
+	<div class="navbar navbar-inverse">
+	<a th:href="@{/home} "class="navbar-brand">TCN</a>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a  th:href="@{/login}" >Log In</a></li>
+				<li><a  th:href="@{/signup}" >Sign Up</a></li>
+				<li><a  th:href="@{/AllUser}" >All User</a></li>
+			</ul>	
+		</div>
+	</div>
+</div>
+
+
  <div class="container">
   <h2>Hi <span th:utext="${userName}"></span>, this is the home page.</h2>
   <a th:href="@{/logout}">Sign out</a>
  </div>
+ 
+ <script src="static/js/bootstrap.min.js"></script>
 </body>
 </html>
