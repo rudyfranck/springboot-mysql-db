@@ -16,6 +16,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user")
 public class User {
+	//text tcn
 	@Id
 	 @GeneratedValue(strategy = GenerationType.AUTO)
 	 private int id;
